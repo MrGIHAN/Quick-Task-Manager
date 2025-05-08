@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Task Summary</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="js/summary.js"></script>
+</head>
+<body>
+<header>
+    <h1>Task Summary</h1>
+    <a href="index.html" class="back-btn">← Back to Tasks</a>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+</header>
+
+<main class="summary-main">
+    <div class="summary-grid">
+        <div class="summary-card">
+            <h3>Total Tasks</h3>
+            <p id="totalCount">0</p>
+        </div>
+        <div class="summary-card">
+            <h3>Pending</h3>
+            <p id="pendingCount">0</p>
+        </div>
+        <div class="summary-card">
+            <h3>Completed</h3>
+            <p id="completedCount">0</p>
+        </div>
+        <div class="summary-card">
+            <h3>Completion Rate</h3>
+            <p id="completionRate">0%</p>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Pending Tasks by Due Date</h2>
+        <canvas id="lineChart"></canvas>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quick Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+<header>
+    <h1>Quick Task Manager</h1>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+</header>
+
+<nav>
+    <button onclick="toggleTaskModal()" class="add-task-btn">+ Add Task</button>
+    <a href="summary.html" class="nav-btn">Summary</a>
+    <select id="statusFilter">
+        <option value="ALL">All</option>
+        <option value="PENDING">Pending</option>
+        <option value="COMPLETED">Completed</option>
+    </select>
+</nav>
+
+<main>
+    <!-- Task List -->
+    <div id="taskList" class="task-container">
+        <!-- Tasks will be dynamically inserted here -->
+    </div>
+</main>
+
+<!-- Add Task Modal -->
+<div id="taskModal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal" class="close-icon">&times;</span>
+        <h2>Add New Task</h2>
+        <form id="addTaskForm">
+            <input type="text" id="title" placeholder="Task Title" required />
+            <input type="text" id="description" placeholder="Description" required />
+            <input type="date" id="dueDate" required />
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
