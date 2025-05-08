@@ -1,7 +1,7 @@
 
 # Quick Task Manager
 
-**Quick Task Manager** is a simple and efficient task management web app that allows users to add, manage, and track their tasks with ease. The application supports task filtering, a summary dashboard with visual stats (using Chart.js), and user-specific task tracking via backend API integration.
+**Quick Task Manager** is a simple and efficient task management web app that allows users to easily add, manage, and track their tasks. The application supports task filtering, a summary dashboard with visual stats (using Chart.js), and user-specific task tracking via backend API integration.
 
 ## 🌟 Features
 
@@ -16,7 +16,7 @@
 ### Frontend
 
 * HTML, CSS, JavaScript
-* Chart.js for data visualization
+* Chart.js for data visualisation
 
 ### Backend
 
@@ -24,7 +24,7 @@
 
 ### Others
 
-* LocalStorage for storing userId
+* LocalStorage for storing the userId
 
 ## 📁 Project Structure
 
@@ -44,7 +44,7 @@ quick-task-manager/
 
 - Backend tested using JUnit and Spring Boot Test
 - Integration tests for API endpoints
-- Validation on user inputs for both frontend and backend
+- Validation on user inputs for both the frontend and the backend
 
 ---
 
@@ -52,7 +52,7 @@ quick-task-manager/
 ### Backend (Spring Boot)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/IT21826740/quick-task-manager.git
+   git clone <repo link>
    cd quick-task-manager/backend
 
 ---
@@ -62,9 +62,9 @@ quick-task-manager/
 1️⃣ **Start Docker and Database Connection**
 
 * Make sure Docker is running.
-* Start the database container (e.g., MySQL).
+* Start the database container (e.g., Mysql).
 
-2️⃣ **Open the Project in IntelliJ IDEA**
+2️⃣ **Open the Project in Intellij IDEA**
 
 * Import the project as a Maven project.
 
@@ -91,7 +91,7 @@ mvn spring-boot:run
 6️⃣ **Run Test Cases (if needed)**
 
 * Find the `test` directory in your project structure.
-* Run all test cases from IntelliJ or use Maven:
+* Run all test cases from Intellij or use Maven:
 
 ```bash
 mvn test
@@ -101,7 +101,7 @@ mvn test
 
 ```bash
 mvn clean test
-# Check the `target` directory. If `site` folder is missing, create it manually.
+# Check the `target` directory. If the `site` folder is missing, create it manually.
 ```
 
 8️⃣ **Create JaCoCo Coverage Report**
